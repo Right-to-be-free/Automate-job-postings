@@ -4,13 +4,15 @@
   "type": "module",
   "main": "autoApplyDice.js",
   "scripts": {
-    "start": "node autoApplyDice.js",
-    "build": "npm install",
-    "postinstall": "npx playwright install --with-deps chromium"
+    "build": "npm install && npx playwright install --with-deps chromium",
+    "start": "npx playwright install --with-deps chromium && node autoApplyDice.js"
   },
   "dependencies": {
     "@playwright/test": "^1.55.1",
     "json2csv": "^6.0.0-alpha.2",
     "playwright": "^1.55.1"
+  },
+  "engines": {
+    "node": "22.x"
   }
 }
