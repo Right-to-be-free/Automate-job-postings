@@ -11,20 +11,8 @@
     "@playwright/test": "^1.55.1",
     "json2csv": "^6.0.0-alpha.2",
     "playwright": "^1.55.1"
-  }
-}
-{
-  "name": "job-portal-tracker",
-  "version": "1.0.0",
-  "type": "module",
-  "main": "autoApplyDice.js",
-  "scripts": {
-    "build": "npm install",
-    "start": "npx playwright install --with-deps chromium && node autoApplyDice.js"
   },
-  "dependencies": {
-    "@playwright/test": "^1.55.1",
-    "json2csv": "^6.0.0-alpha.2",
-    "playwright": "^1.55.1"
+  "engines": {
+    "node": "22.x"
   }
 }
