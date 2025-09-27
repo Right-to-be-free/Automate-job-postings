@@ -2,9 +2,11 @@
   "name": "job-portal-tracker",
   "version": "1.0.0",
   "type": "module",
-  "main": "index.js",
+  "main": "autoApplyDice.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "npm install",
+    "postinstall": "npx playwright install --with-deps chromium",
+    "start": "node autoApplyDice.js"
   },
   "keywords": [],
   "author": "",
