@@ -1,0 +1,19 @@
+# === Node modules ===
+node_modules/
+
+# === Logs & temp ===
+*.log
+logs/
+
+# === Data & scraped output ===
+*.csv
+*.json
+
+# === OS / Editor files ===
+.DS_Store
+Thumbs.db
+.vscode/
+
+# === Environment variables ===
+.env
+.env.local
